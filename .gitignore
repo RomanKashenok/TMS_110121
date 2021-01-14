@@ -4,6 +4,9 @@
 # IDEA folders
 .idea
 
+# IDEA files (iml)
+*.iml
+
 # Log file
 *.log
 
