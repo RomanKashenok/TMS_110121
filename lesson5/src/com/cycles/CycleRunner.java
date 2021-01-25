@@ -3,10 +3,8 @@ package com.cycles;
 public class CycleRunner {
     public static void main(String[] args) throws InterruptedException {
 
-        String minsk = "Minsk"; // 0km
         String borisov = "Borisov"; // distance km
         int distance = 750;
-
         boolean isArrived = false;
 
         // 1 - начальная точка
@@ -15,19 +13,15 @@ public class CycleRunner {
 
         int anchorDistance = 50;
 
-//        for (int km = 0; km <= distance; km += anchorDistance) {
-//            System.out.print("Спрашиваю в " + km + " раз. ");
-//            System.out.println("Мы уже приехали в " + borisov);
-//            for (int pipiCounter = 0; pipiCounter < anchorDistance; pipiCounter += 10) {
-//                System.out.println("Хочу в туалет!!!");
-//                Thread.sleep(100);
-//                for (int eatCounter = 0; eatCounter < 10; eatCounter++) {
-//                    System.out.println("Хочу есть!!!");
-//                    Thread.sleep(20);
-//                }
-//            }
-//            Thread.sleep(100);
-//        }
+        for (int km = 0; km <= distance; km += anchorDistance) {
+            System.out.print("Спрашиваю в " + km + " раз. ");
+            System.out.println("Мы уже приехали в " + borisov);
+            for (int pipiCounter = 0; pipiCounter < anchorDistance; pipiCounter += 10) {
+                System.out.println("Хочу в туалет!!!");
+                Thread.sleep(100);
+            }
+            Thread.sleep(100);
+        }
 
         System.out.println("**********************************");
 
@@ -47,11 +41,9 @@ public class CycleRunner {
     }
 
     private static boolean method1() {
-//        System.out.println("Inside method 1");
         return false;
     }
     private static boolean method2() {
-//        System.out.println("Inside method 2");
         return true;
     }
 }
