@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 class Cat implements Serializable {
 
-    private static final long serialVersionUID = 5566504814284968257L;
+    private static final long serialVersionUID = 5566504814284968234L;
 
     private String name;
     private String color;
