@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class Runner {
     public static void main(String [] args) {
@@ -27,6 +25,9 @@ public class Runner {
 
         countMethodrgs(5,4,3,5,3,5,5);
 
+        Calendar cal = Calendar.getInstance();
+        cal.add(Calendar.MONTH, 3);
+        System.out.println(cal.getDisplayName(Calendar.MONTH, Calendar.LONG_STANDALONE, new Locale("ru")));
     }
 
     private static void countMethodrgs(int arg1) {
